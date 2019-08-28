@@ -11,3 +11,96 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* header styles */
+.header {
+  width: 100%;
+  border-bottom: 1px solid grey;
+  padding: 0 20px;
+}
+
+.navlink {
+  margin: 10px;
+  text-decoration: none;
+  display: inline-block;
+  color: #0d2e6d;
+}
+
+
+/* /home page styles */
+.clock-wrapper {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.time {
+  font-size: 50px;
+  color: #356fdc;
+  font-weight: 400;
+}
+
+.date {
+  font-size: 20px;
+  color: #0d2e6d;
+  font-weight: 500;
+}
+
+
+/* /giphy page styles */
+.flex-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 8px;
+}
+
+.search-bar {
+  width: 100%;
+  margin: 8px;
+  height: 30px;
+  padding: 0 4px;
+  border: 1px solid #6157ff;
+}
+
+.search-button {
+  height: 34px;
+  box-shadow: none;
+  border: none;
+  margin: 8px 0;
+  padding: 0 16px;
+  background-color: #6157ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.gifs-list {
+  list-style: none;
+  padding: 0 16px;
+}
+
+.gif-wrapper {
+  margin: 16px 0;
+}
+
+.gif-image {
+  width: 120px;
+}
+
+.gif-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+  text-transform: capitalize;
+}
+
+.gif-username, .gif-uploaded-date {
+  font-size: 10px;
+  font-weight: 400;
+  color: grey;
+}
