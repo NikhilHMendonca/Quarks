@@ -19,7 +19,7 @@ class Giphy extends Component {
     const { searchedQuery } = this.state;
     axios.get('https://api.giphy.com/v1/gifs/search', {params: {api_key: GIPHY_KEY, q: searchedQuery, limit: MAX_RESULTS_LIMIT}})
     .then((response) => {
-        this.setState({ gifResults: response.data.data });
+        if (response && response.data && response.data.data) this.setState({ gifResults: response.data.data });
     })
     .catch((error) => {
       console.log(error.status);
